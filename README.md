@@ -10,10 +10,16 @@ The tool has a GUI that allows the user to select the folder with data in NSRR f
 
 The tool returns: a spreadsheet for each recording reporting the epoch-by-epoch CI alongside with artifacted epochs for each lead; a global Powerpoint file with figures showing the complexity profile for each recording together with the hypnogram; a global spreadsheet reporting median CI values for each sleep stage and recording after the removal or artifacted epochs.
 
-Artifacted epochs are removed based on comparison with adjacent epochs and a threshold criteria. For more info on the rationale behind this approach, see Mariani, S., Borges, A.F., Henriques, T., Goldberger, A.L. and Costa, M.D., 2015, August. Use of multiscale entropy to facilitate artifact detection in electroencephalographic signals. In Engineering in Medicine and Biology Society (EMBC), 2015 37th Annual International Conference of the IEEE (pp. 7869-7872). IEEE.
+Artifacted epochs are removed both based on outliers in spectral power, following the method by based on comparison with adjacent epochs and a threshold criteria. For more info on the rationale behind this approach, see Mariani, S., Borges, A.F., Henriques, T., Goldberger, A.L. and Costa, M.D., 2015, August. Use of multiscale entropy to facilitate artifact detection in electroencephalographic signals. In Engineering in Medicine and Biology Society (EMBC), 2015 37th Annual International Conference of the IEEE (pp. 7869-7872). IEEE.
 
 Acknowledgements:
 saveppt2:  Used to create PPT summaries from MATLAB figures.
 http://www.mathworks.com/matlabcentral/fileexchange/19322-saveppt2
+
+blockEDFLoadClass: Used to quickly load an EDF file. By Dennis Dean.
+https://www.mathworks.com/matlabcentral/fileexchange/45227-blockedfloadclass
+
+loadCompumedicsAnnotationsClass: used to load hypnogram annotations from XML file.
+https://github.com/DennisDean/LoadCompumedicsAnnotationsClass
 
 please report any bugs/questions to sara.mariani7@gmail.com
